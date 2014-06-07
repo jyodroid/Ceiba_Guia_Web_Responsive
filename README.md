@@ -7,7 +7,7 @@ Pretende hacer un compendio de ejemplos básicos que permitan una mejor compresi
   *Practica Realizada en CEIBA SOFTWARE HOUSE*
   
   
-  *Proyecto: Migración de páginas en conjunto con SEVEN4N de Bogotá a formato responsivo propietario de la empresa ONSWIPE en New York.*
+  *Agradecimiento: a las empresas SEVEN4N y ONSWIPE por la oportunidad de aprender sobre responsive web design.*
  
 John Jairo Tangarife Velez
 ----
