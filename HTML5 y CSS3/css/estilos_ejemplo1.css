@@ -1,0 +1,159 @@
+*{
+	margin: 10px;
+}
+body{
+	background: rgb(240, 240, 240);
+	color: black;
+	font-family: sans-serif;
+	font-size: 18px;
+	text-shadow: 1px 1px 0 rgb(0,0,0,0.3);
+}
+ .title{
+ 	color: red;
+ }
+
+ header h1 img{
+ 	width: 150px;
+ 	height: 100px;
+ 	vertical-align: middle;
+ }
+ header h1{
+ 	vertical-align: middle;
+ }
+
+ footer{
+ 	/*border: 10px inset green;*/
+ 	display: inline; /* Esta propiedad permite que el contenido se adapte a lo que hay en pantalla*/
+ 	background: #545454;
+ 	text-align: center;
+ }
+ .personal, .avatar{
+ 	float: inherit;
+ }
+ .avatar{
+ 	border: 2px solid black;
+ 	margin-left: 20px;
+ }
+ #webs{
+ 	background: gray;
+ 	text-align: justify;
+ 	padding: 20px;
+ 	margin-top: 0%;
+ 	margin-right: 210px;
+ 	position: relative;
+ }
+aside{
+	width: 200px;
+	top: 200px;
+	right: 20px;
+
+	background-color: #ccc;
+	font-size: 12px;
+ 	position: absolute;
+}
+#side-img{
+	width: 150px; 
+	height: 100px;
+}
+#webs article{
+	padding: 10px;
+	width: 320px;
+	margin: 10px;
+	border: 1px dotted green;
+	display: inline-table; /*Los articulos en la web forman una grilla*/
+	background: #aaa;
+}
+#webs article img{
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	vertical-align: top;
+}
+#webs article:hover img{
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+}
+#contenedor{
+	margin: 0px auto;
+	/*max-width: 1000px;*/
+	background: lightgray;
+}
+
+nav ul{
+	padding: 0;
+	font-size: 0;
+}
+nav ul li{
+	box-sizing:border-box;
+	display: inline-block;
+	width: 20%;
+	font-size: 14px;
+	height: 20px;
+	vertical-align: top;
+}
+nav ul li:hover{
+	background: rgb(10,82,52);
+}
+nav{
+	background: green;
+}
+nav ul li a{
+	color: white;
+	text-transform: uppercase;
+}
+header{
+	background: rgb(32,99,71);
+	color: white;
+	text-align: center;
+}
+a{
+	color: rgb(32,99,71);
+}
+p.fuente{
+	background: rgba(0,0,0,0.3);
+	font-size: 12px;
+	font-style: italic;
+}
+
+p.imgFooter{
+	background: rgba(1,1,1,0.2);
+	font-style: italic;
+	font-size: 12px;
+}
+
+h2.titulo{
+	background: rgba(10,82,52,0.5);
+	font-style: oblique;
+}
+
+@media screen and (max-width: 480px){
+	nav ul li {
+		width: 50%;
+	}
+	#webs{
+	 	background: gray;
+	 	text-align: justify;
+	 	min-width: 400px;
+	 	padding: 20px;
+	 	margin-top: 0%;
+	 	margin-left: 0px;
+	 	position: relative;
+	 }
+	aside{
+		width: 400px;
+		top: 0px;
+		background-color: #ccc;
+		font-size: 12px;
+ 		position: inherit;
+	}
+
+	header h1 img{
+ 		width: 80px;
+ 		height: 53px;
+ 		vertical-align: middle;
+ 	}
+ 	header h1{
+ 		font-size: 18px;
+ 		vertical-align: middle;
+ 	}
+
+}
