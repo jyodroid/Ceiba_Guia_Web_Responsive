@@ -34,41 +34,43 @@ body{
  	border: 2px solid black;
  	margin-left: 20px;
  }
- #webs{
+ #datosHistoricos,
+ #otrosMedios{
  	background: gray;
  	text-align: justify;
  	padding: 10px;
  	margin-top: 0%;
- 	margin-right: 210px;
  	position: relative;
  }
 aside{
-	width: 200px;
+	width: 18%;
 	top: 200px;
-	right: 20px;
-
+	right: 0px;
+	margin: 30px;
 	background-color: #ccc;
-	font-size: 12px;
  	position: absolute;
 }
 #side-img{
-	width: 150px; 
-	height: 100px;
+	max-width: 90%; 
+	max-height: 60%;
 }
-#webs article{
+#datosHistoricos article, 
+#otrosMedios article{
 	padding: 5px;
-	width: 350px;
 	margin: 10px;
+	max-width: 47%;
 	border: 1px dotted green;
 	display: inline-table; /*Los articulos en la web forman una grilla*/
 	background: #aaa;
 }
-#webs article img{
+#datosHistoricos article img,
+#otrosMedios article img{
 	-webkit-transition:1s;
 	-moz-transition:1s;
 	vertical-align: top;
 }
-#webs article:hover img{
+#datosHistoricos article:hover img,
+#otrosMedios article:hover img{
 	-webkit-transform:scale(1.1);
 	-moz-transform:scale(1.1);
 }
@@ -76,6 +78,7 @@ aside{
 	margin: 0px auto;
 	/*max-width: 1000px;*/
 	background: lightgray;
+	margin-right: 20%;
 }
 
 nav ul{
@@ -127,9 +130,9 @@ h2.titulo{
 
 @media screen and (max-width: 480px){
 	nav ul li {
-		width: 50%;
+		width: 100%;
 	}
-	#webs{
+	#datosHistoricos, #otrosMedios{
 	 	background: gray;
 	 	text-align: justify;
 	 	min-width: 300px;
@@ -155,9 +158,10 @@ h2.titulo{
  		font-size: 18px;
  		vertical-align: middle;
  	}
- 	#webs article{
+ 	#datosHistoricos article, 
+ 	#otrosMedios article{
 		padding: 0px;
-		width: 300px;
+		min-width: 300px;
 		margin: 0px;
 		border: 0px dotted green;
 		background: #aaa;
