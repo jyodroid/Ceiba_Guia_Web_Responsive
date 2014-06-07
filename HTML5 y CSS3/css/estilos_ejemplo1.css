@@ -37,7 +37,7 @@ body{
  #webs{
  	background: gray;
  	text-align: justify;
- 	padding: 20px;
+ 	padding: 10px;
  	margin-top: 0%;
  	margin-right: 210px;
  	position: relative;
@@ -56,8 +56,8 @@ aside{
 	height: 100px;
 }
 #webs article{
-	padding: 10px;
-	width: 320px;
+	padding: 5px;
+	width: 350px;
 	margin: 10px;
 	border: 1px dotted green;
 	display: inline-table; /*Los articulos en la web forman una grilla*/
@@ -132,14 +132,14 @@ h2.titulo{
 	#webs{
 	 	background: gray;
 	 	text-align: justify;
-	 	min-width: 400px;
-	 	padding: 20px;
+	 	min-width: 300px;
+	 	padding: 5px;
 	 	margin-top: 0%;
 	 	margin-left: 0px;
 	 	position: relative;
 	 }
 	aside{
-		width: 400px;
+		width: 300px;
 		top: 0px;
 		background-color: #ccc;
 		font-size: 12px;
@@ -155,5 +155,12 @@ h2.titulo{
  		font-size: 18px;
  		vertical-align: middle;
  	}
-
+ 	#webs article{
+		padding: 0px;
+		width: 300px;
+		margin: 0px;
+		border: 0px dotted green;
+		background: #aaa;
+		font-size: 14px;
+	}
 }
