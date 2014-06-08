@@ -1,0 +1,123 @@
+article:hover img{
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+}
+ section{
+ 	background: gray;
+ 	text-align: justify;
+ 	padding: 0px;
+ 	margin-top: 0%;
+ 	position: relative;
+ }
+ article img{
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	vertical-align: top;
+	width: 300px;
+	height: 200px;
+}
+
+div{
+	margin: 0px auto;
+	background: lightgray;
+}
+
+ /**************DISPLAY****************/
+/*inline-table*/
+#inline-table article{
+	max-width: 20%;
+	border: 1px solid green; 
+	display: inline-table; /*Los articulos en la web forman una grilla*/
+	background: #aaa;
+}
+
+/*inline-flex*/
+#inline-flex article{
+	border: 1px solid green; 
+	display: inline-flex; /*Los articulos no solo forman una grilla sino que son elasticos y se aplanan o expanden según la pantalla*/
+	background: #aaa;
+}
+
+/*inline-table*/
+#none article{
+	max-width: 20%;
+	border: 1px solid green; 
+	display: inline-table; /*ver la configuración de este parametro en la linea 120*/
+	background: #aaa;
+}
+#none article#kenshin{
+	background: yellow;
+}
+/****************End display**********************/
+nav ul{
+	padding: 0;
+	font-size: 0;
+}
+nav ul li{
+	box-sizing:border-box;
+	display: inline-block;
+	width: 20%;
+	font-size: 14px;
+	height: 20px;
+	vertical-align: top;
+}
+nav ul li:hover{
+	background: rgb(10,82,52);
+}
+nav{
+	background: green;
+}
+nav ul li a{
+	color: white;
+	text-transform: uppercase;
+}
+header{
+	background: rgb(32,99,71);
+	color: white;
+	text-align: center;
+}
+
+@media screen and (max-width: 480px){
+	nav ul li {
+		width: 100%;
+	}
+	#inline-table{
+	 	background: gray;
+	 	text-align: justify;
+	 	min-width: 300px;
+	 	padding: 5px;
+	 	margin-top: 0%;
+	 	margin-left: 0px;
+	 	position: relative;
+	 }
+	aside{
+		width: 300px;
+		top: 0px;
+		background-color: #ccc;
+		font-size: 12px;
+ 		position: inherit;
+	}
+
+	header h1 img{
+ 		width: 80px;
+ 		height: 53px;
+ 		vertical-align: middle;
+ 	}
+ 	header h1{
+ 		font-size: 18px;
+ 		vertical-align: middle;
+ 	}
+ 	#inline-table article{
+		padding: 0px;
+		min-width: 300px;
+		margin: 0px;
+		border: 0px dotted green;
+		background: #aaa;
+		font-size: 14px;
+	}
+
+	/*display: none*/
+	#none article#kenshin{
+		display: none; /*Desparece un elemento de la pantalla*/
+	}
+}
