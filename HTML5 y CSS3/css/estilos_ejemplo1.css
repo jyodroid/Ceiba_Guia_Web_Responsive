@@ -8,8 +8,8 @@ body{
 	font-size: 18px;
 	text-shadow: 1px 1px 0 rgb(0,0,0,0.3);
 }
- .title{
- 	color: red;
+ .titulo{
+ 	color: #00E508;
  }
 
  header h1 img{
@@ -38,7 +38,7 @@ body{
  #otrosMedios{
  	background: gray;
  	text-align: justify;
- 	padding: 10px;
+ 	padding: 0px;
  	margin-top: 0%;
  	position: relative;
  }
@@ -56,10 +56,8 @@ aside{
 }
 #datosHistoricos article, 
 #otrosMedios article{
-	padding: 5px;
-	margin: 10px;
 	max-width: 47%;
-	border: 1px dotted green;
+	border: 1px solid green; 
 	display: inline-table; /*Los articulos en la web forman una grilla*/
 	background: #aaa;
 }
@@ -75,7 +73,7 @@ aside{
 	-moz-transform:scale(1.1);
 }
 #contenedor{
-	margin: 0px auto;
+	/*margin: 0px auto;*/
 	/*max-width: 1000px;*/
 	background: lightgray;
 	margin-right: 20%;
