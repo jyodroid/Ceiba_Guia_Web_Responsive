@@ -1,0 +1,160 @@
+article:hover img{
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+}
+ section{
+ 	background: gray;
+ 	text-align: justify;
+ 	padding: 0px;
+ 	margin-top: 0%;
+ 	position: relative;
+ }
+ article img{
+	-webkit-transition:1s;
+	-moz-transition:1s;
+	vertical-align: top;
+	width: 300px;
+	height: 200px;
+}
+
+div{
+	margin: 0px auto;
+	background: lightgray;
+}
+
+ /**************BOX-SIZING****************/
+
+/*Utilizar la imagen como referente*/
+
+article img{
+	width: 150px; 
+	height: 100px;
+}
+
+#normal{
+	width: 150px; 
+	height: 200px; 
+	margin: 10px; 
+	border: 10px; 
+	padding: 0 10px;
+}
+
+#content-box{
+	-webkit-box-sizing: content-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: content-box;    /* Firefox*/
+	box-sizing: content-box; 
+	width: 150px; 
+	height: 200px; 
+	margin: 10px; 
+	border: 10px; 
+	padding: 0 10px;
+}
+
+#border-box{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox*/
+	box-sizing: border-box; 
+	width: 150px; 
+	height: 200px; 
+	margin: 10px; 
+	border: 10px; 
+	padding: 10px;
+}
+
+/*inherit*/
+/*parent*/
+#box-sizing{
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox*/
+	box-sizing: border-box; 
+	width: 200px; 
+	height: 1150px; 
+	margin: 0px; 
+	border: 0px; 
+	padding: 0px;
+}
+/*child*/
+#inherit{
+	-webkit-box-sizing: inherit;  /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: inherit;     /* Firefox*/
+	box-sizing: inherit;
+	width: 150px; 
+	height: 200px; 
+	margin: 10px; 
+	border: 10px; 
+	padding: 10px;
+}
+/*fin inherit*/
+/****************End box-sizing**********************/
+nav ul{
+	padding: 0;
+	font-size: 0;
+}
+nav ul li{
+	box-sizing:border-box;
+	display: inline-block;
+	width: 20%;
+	font-size: 14px;
+	height: 20px;
+	vertical-align: top;
+}
+nav ul li:hover{
+	background: rgb(10,82,52);
+}
+nav{
+	background: green;
+}
+nav ul li a{
+	color: white;
+	text-transform: uppercase;
+}
+header{
+	background: rgb(32,99,71);
+	color: white;
+	text-align: center;
+}
+
+@media screen and (max-width: 480px){
+	nav ul li {
+		width: 100%;
+	}
+	#inline-table{
+	 	background: gray;
+	 	text-align: justify;
+	 	min-width: 300px;
+	 	padding: 5px;
+	 	margin-top: 0%;
+	 	margin-left: 0px;
+	 	position: relative;
+	 }
+	aside{
+		width: 300px;
+		top: 0px;
+		background-color: #ccc;
+		font-size: 12px;
+ 		position: inherit;
+	}
+
+	header h1 img{
+ 		width: 80px;
+ 		height: 53px;
+ 		vertical-align: middle;
+ 	}
+ 	header h1{
+ 		font-size: 18px;
+ 		vertical-align: middle;
+ 	}
+ 	#inline-table article{
+		padding: 0px;
+		min-width: 300px;
+		margin: 0px;
+		border: 0px dotted green;
+		background: #aaa;
+		font-size: 14px;
+	}
+
+	/*display: none*/
+	#none article#kenshin{
+		display: none; /*Desparece un elemento de la pantalla*/
+	}
+}
