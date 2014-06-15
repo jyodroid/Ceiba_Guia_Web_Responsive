@@ -56,7 +56,7 @@ aside{
 }
 #datosHistoricos article, 
 #otrosMedios article{
-	max-width: 47%;
+	max-width: 45%;
 	border: 1px solid green; 
 	display: inline-table; /*Los articulos en la web forman una grilla*/
 	background: #aaa;
@@ -148,14 +148,19 @@ h2.titulo{
 	}
 
 	header h1 img{
- 		width: 80px;
- 		height: 53px;
+ 		width: 25px;
+ 		height: 16.666px;
  		vertical-align: middle;
  	}
  	header h1{
  		font-size: 18px;
  		vertical-align: middle;
  	}
+ 	#datosHistoricos h1, 
+ 	#otrosMedios h1{
+		font-size: 24px;
+	}
+
  	#datosHistoricos article, 
  	#otrosMedios article{
 		padding: 0px;
