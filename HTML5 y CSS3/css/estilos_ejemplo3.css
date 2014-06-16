@@ -2,6 +2,12 @@ article:hover img{
 	-webkit-transform:scale(1.1);
 	-moz-transform:scale(1.1);
 }
+
+div{
+	margin: 0px auto;
+	background: lightgray;
+}
+
  section{
  	background: gray;
  	text-align: justify;
@@ -9,34 +15,22 @@ article:hover img{
  	margin-top: 0%;
  	position: relative;
  }
- article img{
-	-webkit-transition:1s;
-	-moz-transition:1s;
-	vertical-align: top;
-	width: 300px;
-	height: 200px;
-}
-
-div{
-	margin: 0px auto;
-	background: lightgray;
-}
 
  /**************BOX-SIZING****************/
 
 /*Utilizar la imagen como referente*/
 
-article img{
+#box-sizing article#kenshin img{
 	width: 150px; 
 	height: 100px;
 }
 
 #normal{
 	width: 150px; 
-	height: 200px; 
+	height: 100px; 
 	margin: 10px; 
 	border: 10px; 
-	padding: 0 10px;
+	padding: 10px;
 }
 
 #content-box{
@@ -44,18 +38,18 @@ article img{
 	-moz-box-sizing: content-box;    /* Firefox*/
 	box-sizing: content-box; 
 	width: 150px; 
-	height: 200px; 
+	height: 100px; 
 	margin: 10px; 
 	border: 10px; 
-	padding: 0 10px;
+	padding: 10px;
 }
 
 #border-box{
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox*/
 	box-sizing: border-box; 
-	width: 150px; 
-	height: 200px; 
+	width: 170px; 
+	height: 120px; 
 	margin: 10px; 
 	border: 10px; 
 	padding: 10px;
@@ -63,12 +57,10 @@ article img{
 
 /*inherit*/
 /*parent*/
-#box-sizing{
+#box-sizing-td{
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox*/
 	box-sizing: border-box; 
-	width: 200px; 
-	height: 1150px; 
 	margin: 0px; 
 	border: 0px; 
 	padding: 0px;
@@ -79,13 +71,146 @@ article img{
 	-moz-box-sizing: inherit;     /* Firefox*/
 	box-sizing: inherit;
 	width: 150px; 
-	height: 200px; 
+	height: 100px; 
 	margin: 10px; 
 	border: 10px; 
 	padding: 10px;
 }
 /*fin inherit*/
 /****************End box-sizing**********************/
+/*****************FLEX BOXING **********************/
+/*flex-box-options*/
+#flex-box-options #row-order{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;/*Valor por defecto*/
+}
+#flex-box-options #row-order-inline{
+	display: -webkit-inline-flex;
+	display: inline-flex; /*no se pone la dirección por que row ya se encuentra por defecto*/
+}
+#flex-box-options #column-order{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+}
+#flex-box-options #column-order-inline{
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	-webkit-flex-direction: column;
+}
+
+/*Reverse options*/
+#reverse-options #row-order{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;/*Valor por defecto*/
+}
+#reverse-options #reverse-row-order{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row-reverse;
+}
+#reverse-options #reverse-column-order{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column-reverse;
+}
+#reverse-options #column-order{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+}
+
+/*General flex items*/
+div#flex-item1{
+	background-color: green;
+	-webkit-flex: 1;
+}
+div#flex-item2{
+	background-color: red;
+	-webkit-flex: 2;
+}
+div#flex-item3{
+	background-color: blue;
+	-webkit-flex: 3;
+}
+
+/*Align self options*/
+#align-self{
+	display: -webkit-flex;
+	display: flex;
+}
+#align-self div#flex-item1{
+	background-color: green;
+	-webkit-align-self: flex-start; /* Esta propiedad es para alineamiento vertical su valor puede ser: flex-start, center, baseline, stretch y flex-end. */
+}
+#align-self div#flex-item2{
+	background-color: red;
+	-webkit-align-self: flex-end;
+}
+#align-self div#flex-item3{
+	background-color: blue;
+	-webkit-align-self: center;
+}
+#align-self div#flex-item4{
+	background-color: purple;
+	-webkit-align-self: baseline;
+}
+#align-self div#flex-item5{
+	background-color: orange;
+	-webkit-align-self: stretch;
+}
+#align-self div#flex-item6{
+	background-color: magenta;
+}
+
+/*Definiendo el ancho*/
+#ancho-def{
+	display: -webkit-flex;
+	display: flex;
+}
+#ancho-def div#flex-item1{
+	background-color: green;
+	-webkit-flex: 40%;
+}
+#ancho-def div#flex-item2{
+	background-color: red;
+	-webkit-flex: 200px;
+}
+#ancho-def div#flex-item3{
+	background-color: blue;
+	-webkit-flex: 20%;
+}
+#ancho-def div#flex-item4{
+	background-color: purple;
+	-webkit-flex: 50rem;
+}
+
+/*Definiendo la ubicación*/
+#posicion-def{
+	display: -webkit-flex;
+	display: flex;
+}
+#posicion-def div#flex-item1{
+	background-color: green;
+	-webkit-order: 3;
+}
+#posicion-def div#flex-item2{
+	background-color: red;
+	-webkit-order: 1;
+}
+#posicion-def div#flex-item3{
+	background-color: blue;
+	-webkit-order: -1;
+}
+#posicion-def div#flex-item4{
+	background-color: purple;
+	-webkit-order: 2;
+}
+
+
+/*****************FIN FLEX BOXING **********************/
 nav ul{
 	padding: 0;
 	font-size: 0;
@@ -112,49 +237,4 @@ header{
 	background: rgb(32,99,71);
 	color: white;
 	text-align: center;
-}
-
-@media screen and (max-width: 480px){
-	nav ul li {
-		width: 100%;
-	}
-	#inline-table{
-	 	background: gray;
-	 	text-align: justify;
-	 	min-width: 300px;
-	 	padding: 5px;
-	 	margin-top: 0%;
-	 	margin-left: 0px;
-	 	position: relative;
-	 }
-	aside{
-		width: 300px;
-		top: 0px;
-		background-color: #ccc;
-		font-size: 12px;
- 		position: inherit;
-	}
-
-	header h1 img{
- 		width: 80px;
- 		height: 53px;
- 		vertical-align: middle;
- 	}
- 	header h1{
- 		font-size: 18px;
- 		vertical-align: middle;
- 	}
- 	#inline-table article{
-		padding: 0px;
-		min-width: 300px;
-		margin: 0px;
-		border: 0px dotted green;
-		background: #aaa;
-		font-size: 14px;
-	}
-
-	/*display: none*/
-	#none article#kenshin{
-		display: none; /*Desparece un elemento de la pantalla*/
-	}
 }

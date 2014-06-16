@@ -3,7 +3,7 @@
 <head>
 	<meta charset = "utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1">
-	<title>CSS-Display</title>
+	<title>CSS-Box-sizing</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos_ejemplo3.css">
 </head>
 <body>
@@ -12,48 +12,249 @@
 	</header>
 	<nav>
 		<ul>
-			<li><a href="#normal">Sin box sizing</a></li>
-			<li><a href="#content-box">content-box</a></li>
-			<li><a href="#border-box">Border-box</a></li>
-			<li><a href="#inherit">inherit</a></li>
+			<li><a href="#normal">Box-sixing</a></li>
+			<li><a href="#flex-box-sizing">Flex box sizing</a></li>
+			<li><a href="#flex-box-sizing-fi">Inline flex-box-sizing</a></li>
 		</ul>
 	</nav>  
 	<div id="box-sizing">
-		<h4>Sin box sizing</h4>
-		<section id="normal">
-			<article id="kenshin">
-				<img src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin">
-			</article>
-			<article id="fuji">
-				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji">
-			</article>
-		</section>
-		<h4>Box-sizing: content-box;</h4>
-		<section id="content-box">
-			<article id="kenshin">
-				<img src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin">
-			</article>
-			<article id="fuji">
-				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji">
-			</article>
-		</section>
-		<h4>Box-sizing: border-box;</h4>
-		<section id="border-box">
-			<article id="kenshin">
-				<img src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin">
-			</article>
-			<article id="fuji">
-				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji">
-			</article>
-		</section>
-		<h4>Box-sizing: inherit;</h4>
-		<section id="inherit">
-			<article id="kenshin">
-				<img src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin">
-			</article>
-			<article id="fuji">
-				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji">
-			</article>
-		</section>
+		<h1>Box sizing</h1>
+		<table>
+			<tr>
+				<td>
+					<h4>Sin box sizing</h4>
+					<section id="normal">
+						<article id="kenshin">
+							<img src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin">
+						</article>
+					</section>
+				</td>
+				<td>
+					<h4>Box-sizing: content-box;</h4>
+					<section id="content-box">
+						<article id="kenshin">
+							<img src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin">
+						</article>
+					</section>
+				</td>
+				<td>
+					<h4>Box-sizing: border-box;</h4>
+					<section id="border-box">
+						<article id="kenshin">
+							<img src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin">
+						</article>
+					</section>					
+				</td>
+				<td id = "box-sizing-td">
+					<h4>Box-sizing: inherit;</h4>
+					<section id="inherit">
+						<article id="kenshin">
+							<img src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin">
+						</article>
+					</section>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<!--Flex box  options-->
+	<div id="flex-box-options">
+		<h1>Opciones de flexbox</h1>
+		<div id = "row-order">
+		    Flexcontainer configurado con display: flex; y organizados en filas con webkit-flex-direction: row;
+			<div id = "flex-item1">
+				flex-item 1
+				<img src="http://upload.wikimedia.org/wikipedia/commons/7/73/Meiji_Emperor.jpg" alt="Emperador Meiji" width="150" height="100">
+			</div>
+			<div id = "flex-item2">
+				flex-item 2 
+				<img class= "kenshin" src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin" width="150" height="100">
+			</div>
+			<div id = "flex-item3">
+				flex-item 3
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji" width="150" height="100">
+			</div>
+		</div>
+		<div id = "row-order-inline">
+			 Flexcontainer configurado con display: inline-flex; y organizados en filas con webkit-flex-direction: row;
+			<div id = "flex-item1">
+				flex-item 1
+				<img src="http://upload.wikimedia.org/wikipedia/commons/7/73/Meiji_Emperor.jpg" alt="Emperador Meiji" width="150" height="100">
+			</div>
+			<div id = "flex-item2">
+				flex-item 2 
+				<img class= "kenshin" src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin" width="150" height="100">
+			</div>
+			<div id = "flex-item3">
+				flex-item 3
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji" width="150" height="100">
+			</div>
+		</div>
+		<div id = "column-order">
+			Flexcontainer configurado con display: flex; y organizados en columnas con webkit-flex-direction: column;
+			<div id = "flex-item1">
+				flex-item 1
+				<img src="http://upload.wikimedia.org/wikipedia/commons/7/73/Meiji_Emperor.jpg" alt="Emperador Meiji" width="150" height="100">
+			</div>
+			<div id = "flex-item2">
+				flex-item 2 
+				<img class= "kenshin" src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin" width="150" height="100">
+			</div>
+			<div id = "flex-item3">
+				flex-item 3
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji" width="150" height="100">
+			</div>
+		</div>
+		<div id = "column-order-inline">
+			Flexcontainer configurado con display: inline-flex; y organizados en columnas con webkit-flex-direction: column;
+			<div id = "flex-item1">
+				flex-item 1
+				<img src="http://upload.wikimedia.org/wikipedia/commons/7/73/Meiji_Emperor.jpg" alt="Emperador Meiji" width="150" height="100">
+			</div>
+			<div id = "flex-item2">
+				flex-item 2 
+				<img class= "kenshin" src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin" width="150" height="100">
+			</div>
+			<div id = "flex-item3">
+				flex-item 3
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji" width="150" height="100">
+			</div>
+		</div>
+	</div>
+
+	<!--reverse options-->
+	<div id="reverse-options">
+		<h1>Reverse options.</h1>
+		<div id = "row-order">
+			Organizados en filas con webkit-flex-direction: row;
+			<div id = "flex-item1">
+				flex-item 1
+				<img src="http://upload.wikimedia.org/wikipedia/commons/7/73/Meiji_Emperor.jpg" alt="Emperador Meiji" width="150" height="100">
+			</div>
+			<div id = "flex-item2">
+				flex-item 2 
+				<img class= "kenshin" src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin" width="150" height="100">
+			</div>
+			<div id = "flex-item3">
+				flex-item 3
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji" width="150" height="100">
+			</div>
+		</div>
+		<div id = "reverse-row-order">
+			Organizados en filas de derecha a izquierda con webkit-flex-direction: row-reverse;
+			<div id = "flex-item1">
+				flex-item 1
+				<img src="http://upload.wikimedia.org/wikipedia/commons/7/73/Meiji_Emperor.jpg" alt="Emperador Meiji" width="150" height="100">
+			</div>
+			<div id = "flex-item2">
+				flex-item 2 
+				<img class= "kenshin" src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin" width="150" height="100">
+			</div>
+			<div id = "flex-item3">
+				flex-item 3
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji" width="150" height="100">
+			</div>
+		</div>
+		<div id = "column-order">
+			Organizados en columnas con webkit-flex-direction: column;
+			<div id = "flex-item1">
+				flex-item 1
+				<img src="http://upload.wikimedia.org/wikipedia/commons/7/73/Meiji_Emperor.jpg" alt="Emperador Meiji" width="150" height="100">
+			</div>
+			<div id = "flex-item2">
+				flex-item 2 
+				<img class= "kenshin" src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin" width="150" height="100">
+			</div>
+			<div id = "flex-item3">
+				flex-item 3
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji" width="150" height="100">
+			</div>
+		</div>
+		<div id = "reverse-column-order">
+			Organizados en columnas de abajo hacia arriba con webkit-flex-direction: column-reverse;
+			<div id = "flex-item1">
+				flex-item 1
+				<img src="http://upload.wikimedia.org/wikipedia/commons/7/73/Meiji_Emperor.jpg" alt="Emperador Meiji" width="150" height="100">
+			</div>
+			<div id = "flex-item2">
+				flex-item 2 
+				<img class= "kenshin" src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin" width="150" height="100">
+			</div>
+			<div id = "flex-item3">
+				flex-item 3
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji" width="150" height="100">
+			</div>
+		</div>
+	</div>
+	<div>
+		<h1>Alineamiento vertical.</h1>
+		<div id = "align-self">
+			<div id = "flex-item1">
+				flex-start
+				<img src="http://upload.wikimedia.org/wikipedia/commons/7/73/Meiji_Emperor.jpg" alt="Emperador Meiji" width="150" height="100">
+			</div>
+			<div id = "flex-item2">
+				flex-end
+				<img class= "kenshin" src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin" width="150" height="100">
+			</div>
+			<div id = "flex-item3">
+				center
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji" width="150" height="100">
+			</div>
+			<div id = "flex-item4">
+				baseline
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Tokugawa_family_crest.svg/405px-Tokugawa_family_crest.svg.png" width="150" height="100">
+			</div>
+			<div id = "flex-item5">
+				stretch
+				<img src="http://xiahpop.com/wp-content/uploads/2014/01/japanflag_face_xiahpop-750x472.jpg" alt ="bandera de japon" width="150" height="100">
+			</div>
+			<div id = "flex-item6">
+				control
+				<img src="http://narock22.files.wordpress.com/2010/05/eva.jpg?w=823" alt ="Eva" width="150" height="100">
+			</div>
+		</div>
+	</div>
+	<div>
+		<h1>Definiendo el ancho.</h1>
+		<div id = "ancho-def">
+			<div id = "flex-item1">
+				40 %
+				<img src="http://upload.wikimedia.org/wikipedia/commons/7/73/Meiji_Emperor.jpg" alt="Emperador Meiji" width="150" height="100">
+			</div>
+			<div id = "flex-item2">
+				200px
+				<img class= "kenshin" src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin" width="150" height="100">
+			</div>
+			<div id = "flex-item3">
+				20%
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji" width="150" height="100">
+			</div>
+			<div id = "flex-item4">
+				50rem
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Tokugawa_family_crest.svg/405px-Tokugawa_family_crest.svg.png" width="150" height="100">
+			</div>
+		</div>
+	</div>
+	<div>
+		<h1>Definiendo la posición.</h1>
+		<div id = "posicion-def">
+			<div id = "flex-item1">
+				Primero en el HTML
+				<img src="http://upload.wikimedia.org/wikipedia/commons/7/73/Meiji_Emperor.jpg" alt="Emperador Meiji" width="150" height="100">
+			</div>
+			<div id = "flex-item2">
+				Segundo en el HTML
+				<img class= "kenshin" src="http://1.bp.blogspot.com/-eWggFFVq578/Uhdy6yv8D3I/AAAAAAAAIbA/ehHW5w-JRoc/s1600/rurouni-kenshin-wallpapers.jpg" alt="Rurouni Kenshin" width="150" height="100">
+			</div>
+			<div id = "flex-item3">
+				Tercero en el HTML
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mountfujijapan.jpg/250px-Mountfujijapan.jpg" alt="fuji" width="150" height="100">
+			</div>
+			<div id = "flex-item4">
+				Cuarto en el HTML
+				<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Tokugawa_family_crest.svg/405px-Tokugawa_family_crest.svg.png" width="150" height="100">
+			</div>
+		</div>
 	</div>
 </html>
