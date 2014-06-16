@@ -17,7 +17,6 @@ div{
  }
 
  /**************BOX-SIZING****************/
-
 /*Utilizar la imagen como referente*/
 
 #box-sizing article#kenshin img{
@@ -194,11 +193,11 @@ div#flex-item3{
 }
 #posicion-def div#flex-item1{
 	background-color: green;
-	-webkit-order: 3;
+	-webkit-order: 1;
 }
 #posicion-def div#flex-item2{
 	background-color: red;
-	-webkit-order: 1;
+	-webkit-order: 2;
 }
 #posicion-def div#flex-item3{
 	background-color: blue;
@@ -206,7 +205,7 @@ div#flex-item3{
 }
 #posicion-def div#flex-item4{
 	background-color: purple;
-	-webkit-order: 2;
+	-webkit-order: 0;
 }
 
 
