@@ -12,3 +12,5 @@ Pretende hacer un compendio de ejemplos básicos que permitan una mejor compresi
 John Jairo Tangarife Velez
 ----
  *Ingeniero Desarrollador*
+# License
+Project under [MIT License](https://opensource.org/licenses/MIT)
